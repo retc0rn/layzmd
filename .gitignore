@@ -7,3 +7,6 @@
 
 # Design specs/plans are kept locally only, not published
 /docs/
+
+# Local-only screenshot (contains redacted scan data), never publish
+/pics/web_admin_example.png
