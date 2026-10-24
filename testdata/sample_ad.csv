@@ -1,0 +1,41 @@
+Plugin ID,CVE,CVSS v3.0 Base Score,Risk,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output,Service,Detected OS
+10000,,,None,10.0.0.5,tcp,389,LDAP Server Detection,syn,desc,,,ldap running,ldap,
+10001,,,None,10.0.0.5,udp,53,DNS Server Detection,syn,desc,,,dns running,dns,
+10002,,,None,10.0.0.5,tcp,88,Kerberos Information Disclosure,syn,desc,,,"DNS Domain Name : corp.acme.com
+NetBIOS Domain Name : CORP
+DNS Computer Name : dc01.corp.acme.com
+Realm : ACME.COM",kerberos,
+57608,,,None,10.0.0.5,tcp,445,SMB Signing not required,syn,desc,,,signing disabled,cifs,
+60119,,,None,10.0.0.6,tcp,445,Microsoft Windows SMB Share Permissions Enumeration,syn,desc,,,"Share path : \\10.0.0.6\Data
+Local path : C:\Data
+[*] Allow ACE for Everyone (S-1-1-0):
+FILE_GENERIC_READ : YES
+FILE_GENERIC_WRITE : YES",cifs,
+10394,,,None,10.0.0.7,tcp,445,SMB Log In Possible,syn,desc,,,logged in as 'guest',cifs,
+20001,,,None,10.0.0.8,tcp,445,SMBv1 Detection,syn,desc,,,SMBv1 is enabled on this host,cifs,
+20002,,,None,10.0.0.18,tcp,445,SMB Protocol Detection,syn,desc,,,SMB v1 is enabled on this host,cifs,
+50000,,,None,10.0.0.5,tcp,445,Microsoft Windows SAM Enumeration,syn,desc,,,"User : CORP\jdoe
+UserPrincipalName : asmith@corp.acme.com",smb,
+49705,,,None,10.0.0.8,tcp,80,Web Server Harvested Email Addresses,syn,desc,,,contact bob@corp.acme.com,www,
+50001,,,None,10.0.0.19,tcp,445,Microsoft Windows SAM Enumeration,syn,desc,,,"User : NT AUTHORITY\SYSTEM
+User : BUILTIN\Administrators",smb,
+50002,,,None,10.0.0.20,tcp,445,Microsoft Windows SAM Enumeration,syn,desc,,,"Account Name : carol@corp.acme.com",smb,
+20811,,,None,10.0.0.9,tcp,443,Microsoft Windows Installed Software Enumeration,syn,desc,,,CrowdStrike Falcon Sensor installed,www,
+10144,,,None,10.0.0.10,tcp,1433,Microsoft SQL Server Detection,syn,desc,,,"instanceName : MSSQLSERVER
+version : 15.0.2000.5
+DNS Computer Name : sql01.corp.acme.com
+DNS Domain Name : corp.acme.com",mssql,
+11936,,,High,10.0.0.11,tcp,445,OS Identification,syn,desc,,,Windows Server 2012,,Windows Server 2012 R2
+10863,,,None,10.0.0.5,tcp,443,SSL Certificate Information,syn,desc,,,"Subject:
+Common Name: dc01.corp.acme.com
+Issuer:
+Common Name: corp-CA
+Organization: dc=corp,dc=acme,dc=com",www,
+11219,,,None,10.0.0.12,tcp,80,Service Detection,syn,desc,,,found /certsrv/ enrollment page,www,
+22964,,,None,10.0.0.13,tcp,80,SCCM Detection,syn,desc,,,"System Center Configuration Manager management point
+Site code : ABC
+Management point name : mp.corp.acme.com",www,
+50001,,,None,10.0.0.14,tcp,443,Web Server Detection,syn,desc,,,Active Directory Federation Services adfs,www,
+50002,,,None,10.0.0.15,tcp,443,Microsoft Exchange Detection,syn,desc,,,Outlook Web App / cpe:/a:microsoft:exchange,www,
+50003,,,None,10.0.0.16,tcp,3268,LDAP Server Detection,syn,desc,,,global catalog ldap,ldap,
+50004,,,None,10.0.0.17,tcp,5985,Service Detection,syn,desc,,,winrm ws-management,www,

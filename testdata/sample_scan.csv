@@ -1,0 +1,6 @@
+Plugin ID,CVE,CVSS v3.0 Base Score,CVSS v2.0 Base Score,Risk,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output,Service
+100001,CVE-2020-1938,9.8,,Critical,10.20.1.11,tcp,8009,Apache Tomcat AJP,Ghostcat,AJP request injection,Upgrade Tomcat,https://example.invalid/a,out1,ajp13
+100002,"CVE-2016-2107,CVE-2016-2108",,7.5,High,10.20.2.5,tcp,443,OpenSSL Padding Oracle,MITM,Padding oracle,Upgrade OpenSSL,,out2,www
+100003,,,,,10.20.4.7,tcp,0,Windows Server 2012 Unsupported,Unsupported OS,EOL,Upgrade OS,,out3,
+100004,CVE-2017-0144,9.3,,Critical,10.20.4.7,tcp,445,MS17-010,EternalBlue,SMBv1 RCE,Patch MS17-010,,out4,cifs
+100005,,,,None,,tcp,22,No Host Row,should be skipped,,,,,

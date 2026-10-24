@@ -1,0 +1,5 @@
+Plugin ID,CVE,CVSS v3.0 Base Score,Risk,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output,Service
+20001,CVE-2020-1938,9.8,Critical,10.1.0.1,tcp,8009,Apache Tomcat 7.0.0 < 7.0.100 Multiple Vulnerabilities,syn a,desc a,sol a,ref a,out a,ajp13
+20002,CVE-2019-0221,6.1,Medium,10.1.0.2,tcp,8080,Apache Tomcat 7.0.0 < 7.0.100 Multiple Vulnerabilities,syn b,desc b,sol b,ref b,out b,http
+20003,CVE-2017-0144,9.3,Critical,10.1.0.3,tcp,445,MS17-010 SMB Remote Code Execution,syn c,SMBv1 RCE,patch,ref c,out c,cifs
+20004,,,None,10.1.0.4,tcp,0,Microsoft Windows Server 2012 Unsupported,syn d,EOL host,upgrade,,out d,

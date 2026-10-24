@@ -1,0 +1,9 @@
+Plugin ID,CVE,CVSS v3.0 Base Score,Risk,Host,Protocol,Port,Name,Detected OS,Plugin Output,Service
+10001,,,None,10.20.4.7,tcp,3389,RDP Detection,Microsoft Windows Server 2019,,ms-wbt-server
+10002,,,None,10.20.4.7,tcp,445,SMB,Microsoft Windows Server 2019,,cifs
+10003,,,None,10.20.4.8,tcp,3389,RDP Detection,Microsoft Windows Server 2016,,ms-wbt-server
+10004,,,None,10.20.3.14,tcp,22,SSH,,Operating System : Ubuntu 20.04,ssh
+10005,,,None,10.20.9.9,tcp,80,HTTP Server,,,www
+22964,,,None,10.20.9.9,tcp,8443,Service Detection,,A web server is running on this port through TLSv1.2.,
+10007,,,None,10.20.9.9,tcp,8080,HTTP Server Type and Version,,,
+10008,,,None,10.20.4.7,tcp,445,Microsoft Windows SMB Service Detection,,,

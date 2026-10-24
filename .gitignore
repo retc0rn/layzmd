@@ -1,0 +1,9 @@
+/layzmd
+/layzmd.exe
+/dist/
+*.out
+
+/.superpowers/
+
+# Design specs/plans are kept locally only, not published
+/docs/
